@@ -9,8 +9,13 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function(req, res) {
 	res.render('index');
+	console.log('yeeee');
 });
 
+app.post('/formsubmit', function(req, res) {
+	res.render();
+	console.log('hoooray');
+});
 var server = app.listen(8622, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
