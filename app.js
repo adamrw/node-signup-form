@@ -13,6 +13,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/formsubmit', function(req, res) {
+	//need to redirect here to success page after navigating to /formsubmit. but will only handle POST requests, so navigating to /formsubmit will 404
 	res.render();
 	console.log('hoooray');
 });
